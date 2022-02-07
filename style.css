@@ -10,3 +10,63 @@ body {
 }
 
 /* Add styles here! */
+
+* {
+  --spacing-8px: 8px;
+  --spacing-16px: 16px;
+  --spacing-24px: 24px;
+  --spacing-32px: 32px;
+  --spacing-48px: 48px;
+  --spacing-64px: 64px;
+  --spacing-96px: 96px;
+  --spacing-128px: 128px;
+
+  --font-size-default: 1rem;
+  --font-size-medium: 1.25rem;
+  --font-size-large: 1.5rem;
+  --font-size-larger: 2rem;
+
+  --primary-green: hsl(160deg, 100%, 30%);
+
+  --secondary-gold-lighter: hsl(45deg, 100%, 50%);
+  --secondary-gold-darker: hsl(45deg, 100%, 40%);
+
+  --grays-black: hsl(0deg, 0%, 0%);
+  --grays-very-dark: hsl(0deg, 0%, 10%);
+  --grays-dark: hsl(0deg, 0%, 30%);
+  --grays-medium: hsl(0deg, 0%, 40%);
+  --grays-light: hsl(0deg, 0%, 60%);
+  --grays-white: hsl(0deg, 0%, 100%);
+}
+
+
+.max-width-wrapper {
+  padding: 16px 16px;
+  background-color: white;
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+main {
+  padding: var(--spacing-64px) 0;
+  background-color: var(--grays-light);
+}
+
+.intro-chunk p {
+  max-width: 320px;
+}
+
+strong {
+  color: var(--primary-green)
+}
+
+
+.indented-heading {
+  background-color: var(--secondary-gold-lighter);
+  padding: var(--spacing-16px) var(--spacing-32px);
+  margin: 0;
+  margin-left: calc(var(--spacing-24px) * -1);
+  margin-bottom: 32px;
+  width: fit-content;
+  box-shadow: 0 8px var(--secondary-gold-darker);
+}
